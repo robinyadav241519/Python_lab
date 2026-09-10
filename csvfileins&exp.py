@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("data.csv")
+df = pd.read_csv("students.csv")
 
 print("Data:")
 print(df)
@@ -10,6 +10,11 @@ print(df.shape)
 
 print("\nData Types:")
 print(df.dtypes)
+
+
+print("\nsummary:")
+print(df.describe())
+ 
 
 filtered = df[df["Marks"] >= 50]
 
